@@ -5,9 +5,9 @@ function checkLocation() {
         var userLng = position.coords.longitude;
 
         // Tentukan radius dan lokasi pusat
-        var centerLat = -7.9456698; // Ganti dengan latitude pusat
-        var centerLng = 112.6110842; // Ganti dengan longitude pusat
-        var radius = 880; // Radius dalam meter
+        var centerLat = -7.9517305; // Ganti dengan latitude pusat
+        var centerLng = 112.6154346; // Ganti dengan longitude pusat
+        var radius = 30; // Radius dalam meter
 
         // Hitung jarak antara lokasi pengguna dan pusat
         var distance = calculateDistance(userLat, userLng, centerLat, centerLng);
@@ -15,20 +15,22 @@ function checkLocation() {
         var messageElement = document.getElementById('message');
         var titleElement = document.getElementById('title');
         var imageElement = document.getElementById('location-image');
+        var alertElement = document.getElementById('alert');
         
         if (distance <= radius) {
           document.getElementById('form-container').style.display = 'block'; // Tampilkan form jika dalam radius
           titleElement.textContent = 'Lokasi Sesuai!';
-          messageElement.textContent = 'Lokasi anda: Masjid Raden Patah'
+          messageElement.textContent = 'Lokasi anda: Sekitar Basement & PTQ '+ 'Anda berada dalam radius ' + distance.toFixed(2) + ' meter dari pusat.';
           imageElement.style.display = 'none';
         } else {
           titleElement.textContent = 'Lokasi Tidak Sesuai >_<';
-          document.getElementById('message').textContent = 'Akses ke Google Form dibatasi untuk lokasi tertentu.';
+          document.getElementById('message').textContent = 'Akses ke Google Form dibatasi untuk lokasi tertentu. zona radius yang disarankan: ' + radius + ' meter';
+          alertElement.textContent = 'Lokasi anda: Sekitar Diluar MRP,'+ ' Anda berada dalam radius ' + distance.toFixed(2) + ' meter dari pusat.';
           imageElement.style.display = 'block';
         }
       }, function(error) {
         titleElement.textContent = 'Nyalain dulu dong GPS Lokasinya :(';
-        document.getElementById('message').textContent = 'Gagal mendapatkan lokasi. Pastikan lokasi diaktifkan.';
+        document.getElementById('message').textContent = 'Gagal mendapatkan lokasi. Pastikan lokasi diaktifkan.' + error.message;
         imageElement.style.display = 'block';
       });
     } else {
