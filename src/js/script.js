@@ -30,7 +30,7 @@ function checkLocation() {
                     document.getElementById("form-container").innerHTML = `<iframe src="${formURL}" style="border:none;width:100%;height:1100px;"></iframe>`;
                     document.getElementById("form-container").style.display = 'block';
                     updateUI('Lokasi Sesuai!', 
-                             `Lokasi anda: Sekitar Sekretariat Bersama Gebyar Ramadhan. Anda berada dalam radius ${distance.toFixed(2)} meter dari pusat.`, 
+                             `Lokasi anda: Sekitar PTQ dan MRP. Anda berada dalam radius ${distance.toFixed(2)} meter dari pusat.`, 
                              false);
                 } else {
                     updateUI('Lokasi Tidak Sesuai >_<', 
