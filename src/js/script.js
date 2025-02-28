@@ -1,1 +1,84 @@
-(function(_0x11282e,_0x1f7ab3){var _0x2eaa3e=_0x432f,_0x2c225b=_0x11282e();while(!![]){try{var _0x2cdd08=-parseInt(_0x2eaa3e(0x1f0))/0x1*(parseInt(_0x2eaa3e(0x1f1))/0x2)+-parseInt(_0x2eaa3e(0x1fd))/0x3+parseInt(_0x2eaa3e(0x1fe))/0x4*(-parseInt(_0x2eaa3e(0x209))/0x5)+-parseInt(_0x2eaa3e(0x1fa))/0x6+parseInt(_0x2eaa3e(0x20a))/0x7*(-parseInt(_0x2eaa3e(0x207))/0x8)+parseInt(_0x2eaa3e(0x1eb))/0x9+parseInt(_0x2eaa3e(0x200))/0xa*(parseInt(_0x2eaa3e(0x1ef))/0xb);if(_0x2cdd08===_0x1f7ab3)break;else _0x2c225b['push'](_0x2c225b['shift']());}catch(_0x465746){_0x2c225b['push'](_0x2c225b['shift']());}}}(_0x1b43,0x8f49b));function checkLocation(){var _0x5c2424=_0x432f;navigator['geolocation']?navigator['geolocation'][_0x5c2424(0x1f2)](function(_0x2ae22){var _0x29e8b0=_0x5c2424,_0x247db6=_0x2ae22[_0x29e8b0(0x20f)]['latitude'],_0x3942fb=_0x2ae22[_0x29e8b0(0x20f)]['longitude'],_0x29647b=-7.9517305,_0x3d9635=112.6154346,_0x5401c3=0x1e,_0xde8e8a=calculateDistance(_0x247db6,_0x3942fb,_0x29647b,_0x3d9635),_0x4bd2ab=document['getElementById'](_0x29e8b0(0x202)),_0xdfba83=document[_0x29e8b0(0x201)](_0x29e8b0(0x20b)),_0x38c9df=document[_0x29e8b0(0x201)]('location-image'),_0x562ce2=document[_0x29e8b0(0x201)](_0x29e8b0(0x203));if(_0xde8e8a<=_0x5401c3){var _0x4a9842=_0x29e8b0(0x204),_0x242d2f=atob(_0x4a9842);document[_0x29e8b0(0x201)](_0x29e8b0(0x1fb))[_0x29e8b0(0x1ec)]='<iframe\x20src=\x22'+_0x242d2f+_0x29e8b0(0x1f3),document['getElementById']('form-container')['style'][_0x29e8b0(0x208)]=_0x29e8b0(0x1f6),_0xdfba83[_0x29e8b0(0x1f9)]=_0x29e8b0(0x1e9),_0x4bd2ab[_0x29e8b0(0x1f9)]='Lokasi\x20anda:\x20Sekitar\x20Basement\x20&\x20PTQ\x20'+_0x29e8b0(0x206)+_0xde8e8a['toFixed'](0x2)+'\x20meter\x20dari\x20pusat.',_0x38c9df[_0x29e8b0(0x1ed)][_0x29e8b0(0x208)]='none';}else _0xdfba83[_0x29e8b0(0x1f9)]=_0x29e8b0(0x205),document[_0x29e8b0(0x201)](_0x29e8b0(0x202))[_0x29e8b0(0x1f9)]=_0x29e8b0(0x1f5)+_0x5401c3+_0x29e8b0(0x1fc),_0x562ce2[_0x29e8b0(0x1f9)]=_0x29e8b0(0x1f8)+'\x20Anda\x20berada\x20dalam\x20radius\x20'+_0xde8e8a[_0x29e8b0(0x1ee)](0x2)+'\x20meter\x20dari\x20pusat.',_0x38c9df[_0x29e8b0(0x1ed)][_0x29e8b0(0x208)]='block';},function(_0x4eeb0c){var _0x143f8c=_0x5c2424;titleElement['textContent']=_0x143f8c(0x1ea),document[_0x143f8c(0x201)](_0x143f8c(0x202))[_0x143f8c(0x1f9)]=_0x143f8c(0x1ff)+_0x4eeb0c[_0x143f8c(0x202)],imageElement[_0x143f8c(0x1ed)]['display']=_0x143f8c(0x1f6);}):(titleElement[_0x5c2424(0x1f9)]=_0x5c2424(0x20d),document[_0x5c2424(0x201)](_0x5c2424(0x202))[_0x5c2424(0x1f9)]='Geolocation\x20tidak\x20didukung\x20oleh\x20browser\x20ini.',imageElement['style'][_0x5c2424(0x208)]=_0x5c2424(0x1f6));}function calculateDistance(_0xe63a66,_0x3d0928,_0x40d670,_0x48dfc9){var _0x50b7af=_0x432f,_0x786f91=0x6136b8,_0x5999d2=(_0x40d670-_0xe63a66)*Math['PI']/0xb4,_0x1fcde1=(_0x48dfc9-_0x3d0928)*Math['PI']/0xb4,_0x6163c0=Math[_0x50b7af(0x1f4)](_0x5999d2/0x2)*Math[_0x50b7af(0x1f4)](_0x5999d2/0x2)+Math[_0x50b7af(0x1f7)](_0xe63a66*Math['PI']/0xb4)*Math['cos'](_0x40d670*Math['PI']/0xb4)*Math['sin'](_0x1fcde1/0x2)*Math[_0x50b7af(0x1f4)](_0x1fcde1/0x2),_0x5e1aa6=0x2*Math[_0x50b7af(0x20e)](Math[_0x50b7af(0x20c)](_0x6163c0),Math[_0x50b7af(0x20c)](0x1-_0x6163c0)),_0x1a19de=_0x786f91*_0x5e1aa6;return _0x1a19de;}function _0x432f(_0x28cd7c,_0x366b92){var _0x1b438b=_0x1b43();return _0x432f=function(_0x432f0a,_0x4285b9){_0x432f0a=_0x432f0a-0x1e9;var _0x253af6=_0x1b438b[_0x432f0a];return _0x253af6;},_0x432f(_0x28cd7c,_0x366b92);}window['onload']=checkLocation;function _0x1b43(){var _0xc72a33=['innerHTML','style','toFixed','2162083kzCmHS','47106wxDCFe','4CNqIeE','getCurrentPosition','\x22\x20style=\x22border:none;width:100%;height:1100px;\x22></iframe>','sin','Akses\x20ke\x20Google\x20Form\x20dibatasi\x20untuk\x20lokasi\x20tertentu.\x20zona\x20radius\x20yang\x20disarankan:\x20','block','cos','Lokasi\x20anda:\x20Sekitar\x20Diluar\x20MRP,','textContent','933954TrZhIJ','form-container','\x20meter','2709690CURFcq','1323556efILfS','Gagal\x20mendapatkan\x20lokasi.\x20Pastikan\x20lokasi\x20diaktifkan.','130simnmh','getElementById','message','alert','aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTY1FLMTF4UHZQVnRic3RGRWVHcXBUX2lTYmpCUzV3LVdVS2VZOTdSWEZrdV9WQnJBL3ZpZXdmb3JtP2VtYmVkZGVkPXRydWU=','Lokasi\x20Tidak\x20Sesuai\x20>_<','Anda\x20berada\x20dalam\x20radius\x20','20096AksPnN','display','10YOrBtF','2513GARPyo','title','sqrt','Coba\x20pake\x20browser\x20google\x20chrome\x20yak\x20:)','atan2','coords','Lokasi\x20Sesuai!','Nyalain\x20dulu\x20dong\x20GPS\x20Lokasinya\x20:(','6735645ixJacN'];_0x1b43=function(){return _0xc72a33;};return _0x1b43();}
+function checkLocation() {
+    if (!navigator.geolocation) {
+        updateUI('Coba pake browser Google Chrome yak :)', 
+                 'Geolocation tidak didukung oleh browser ini.', 
+                 true);
+        return;
+    }
+  
+    navigator.permissions?.query({ name: 'geolocation' }).then(permission => {
+        if (permission.state === 'denied') {
+            updateUI('Izin Lokasi Ditolak!', 
+                     'Silakan aktifkan izin lokasi di pengaturan browser.', 
+                     true);
+            return;
+        }
+  
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+                let userLat = parseFloat(position.coords.latitude.toFixed(6));
+                let userLng = parseFloat(position.coords.longitude.toFixed(6));
+  
+                var centerLat = -7.9517305; // Ganti dengan latitude pusat
+                var centerLng = 112.6154346; // Ganti dengan longitude pusat
+                var radius = 50;; // Meter
+  
+                let distance = calculateDistance(userLat, userLng, centerLat, centerLng);
+  
+                if (distance <= radius) {
+                    let formURL = atob('aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTY1FLMTF4UHZQVnRic3RGRWVHcXBUX2lTYmpCUzV3LVdVS2VZOTdSWEZrdV9WQnJBL3ZpZXdmb3JtP2VtYmVkZGVkPXRydWU=');
+                    document.getElementById("form-container").innerHTML = `<iframe src="${formURL}" style="border:none;width:100%;height:1100px;"></iframe>`;
+                    document.getElementById("form-container").style.display = 'block';
+                    updateUI('Lokasi Sesuai!', 
+                             `Lokasi anda: Sekitar Sekretariat Bersama Gebyar Ramadhan. Anda berada dalam radius ${distance.toFixed(2)} meter dari pusat.`, 
+                             false);
+                } else {
+                    updateUI('Lokasi Tidak Sesuai >_<', 
+                             `Akses ke Google Form dibatasi untuk lokasi tertentu. Anda berada dalam radius ${distance.toFixed(2)} meter dari pusat.`, 
+                             true);
+                }
+            },
+            function (error) {
+                let errorMessage = getGeolocationErrorMessage(error);
+                updateUI('Nyalain dulu dong GPS Lokasinya :(', errorMessage, true);
+            },
+            { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+        );
+    });
+  }
+  
+  function calculateDistance(lat1, lng1, lat2, lng2) {
+    const R = 6371000; // Radius Bumi dalam meter
+    const rad = Math.PI / 180;
+    const dLat = (lat2 - lat1) * rad;
+    const dLng = (lng2 - lng1) * rad;
+  
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.cos(lat1 * rad) * Math.cos(lat2 * rad) *
+              Math.sin(dLng / 2) * Math.sin(dLng / 2);
+  
+    return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
+  }
+  
+  function updateUI(title, message, showImage) {
+    document.getElementById('title').textContent = title;
+    document.getElementById('message').textContent = message;
+    document.getElementById('alert').textContent = message;
+    document.getElementById('location-image').style.display = showImage ? 'block' : 'none';
+  }
+  
+  function getGeolocationErrorMessage(error) {
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            return 'Akses lokasi ditolak. Pastikan izin lokasi diaktifkan di pengaturan browser.';
+        case error.POSITION_UNAVAILABLE:
+            return 'Informasi lokasi tidak tersedia. Coba lagi nanti.';
+        case error.TIMEOUT:
+            return 'Permintaan lokasi melebihi batas waktu. Coba lagi.';
+        default:
+            return 'Terjadi kesalahan saat mendapatkan lokasi.';
+    }
+  }
+  
+  window.onload = checkLocation;
+  
