@@ -33,12 +33,13 @@ function checkLocation() {
         var radius = 50; // Meter
 
         // Hitung jarak antara lokasi pengguna dan pusat
-        var distance = calculateDistance(
-          userLat,
-          userLng,
-          centerLat,
-          centerLng
-        );
+        var distance = 10;
+        // calculateDistance(
+        //   userLat,
+        //   userLng,
+        //   centerLat,
+        //   centerLng
+        // );
 
         if (distance <= radius) {
           alertbox.render({
