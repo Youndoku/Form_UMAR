@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 150,
       "density": {
         "enable": false,
         "value_area": 800
@@ -11,7 +11,7 @@
       "value": "#ffffff"
     },
     "shape": {
-      "type": "star",
+      "type": "image",
       "stroke": {
         "width": 0,
         "color": "#000000"
@@ -20,8 +20,8 @@
         "nb_sides": 5
       },
       "image": {
-        "src": "http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg",
-        "width": 100,
+        "src": "./src/style/img/LogoUMARWhite.png",
+        "width": 150,
         "height": 100
       }
     },
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 4,
+      "value": 10,
       "random": true,
       "anim": {
         "enable": false,
@@ -55,7 +55,7 @@
     "move": {
       "enable": true,
       "speed": 2,
-      "direction": "left",
+      "direction": "bottom-left",
       "random": false,
       "straight": true,
       "out_mode": "out",
@@ -71,7 +71,7 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "grab"
       },
       "onclick": {

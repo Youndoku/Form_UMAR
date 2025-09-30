@@ -84,6 +84,7 @@ function checkLocation() {
             }
           }, 200);
         } else {
+          updateUI("Lokasi Tidak Sesuai", "Anda di luar area.", true);
           alertbox.render({
             alertIcon: "warning",
             title: "Lokasi Tidak Sesuai >_<",
@@ -97,7 +98,6 @@ function checkLocation() {
             border: true,
             themeColor: "#FFA500",
           });
-
           setTimeout(() => {
             let titleElement = document.querySelector(".alertbox-title");
             let messageElement = document.querySelector(".alertbox-message");
